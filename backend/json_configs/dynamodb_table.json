@@ -1,0 +1,19 @@
+{
+        "AttributeDefinitions": [
+            {
+                "AttributeName": "role",
+                "AttributeType": "S"
+            }
+        ],
+        "TableName": "ISS-task-dns-track-dev",
+        "KeySchema": [
+            {
+                "AttributeName": "role",
+                "KeyType": "HASH"
+            }
+        ],
+        "ProvisionedThroughput": {
+            "ReadCapacityUnits": 5,
+            "WriteCapacityUnits": 5
+        }
+}

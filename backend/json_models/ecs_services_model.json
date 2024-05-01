@@ -1,0 +1,21 @@
+{
+    "cluster": "ivs",
+    "serviceName": "ivs-webrtc",
+    "taskDefinition": "ivs-webrtc",
+    "desiredCount": 0,
+    "launchType": "FARGATE",
+    "schedulingStrategy": "REPLICA",
+    "platformVersion": "LATEST",
+    "networkConfiguration": {
+        "awsvpcConfiguration": {
+            "subnets": [ ],
+            "securityGroups": [
+                "ivs-sg"
+            ],
+            "assignPublicIp": "ENABLED"
+        }
+    },
+    "deploymentController": {
+        "type": "ECS"
+    }
+}
