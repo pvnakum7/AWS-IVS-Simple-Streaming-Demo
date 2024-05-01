@@ -1,4 +1,5 @@
 # Simplifying live streaming 
+ 
 This solution simplifies live streaming by using the browser APIs and webRTC to capture video. It breaks down the process into smaller, independent blocks. It captures video from cameras and converts it into RTMPS format. This RTMPS video is then sent to Amazon Interactive Video Service (IVS) for streaming. 
 Overall, it helps make live streaming easier and more streamlined.
 (Amazon Interactive Video Service(https://aws.amazon.com/ivs/))
